@@ -3,7 +3,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
   $scope.alerts = [];
   $scope.auth = {
     email: "a@a.com",
-    password: "123456"
+    password: "123456",
   };
 
   if ($location.path() === '/logout') {
@@ -21,7 +21,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
       console.log("authenticate error", error);
     }).then((user) => {
       $rootScope.user = user;
-      $location.url('/auth');
+      $location.url('fastenation/home');
     }).catch();
   };
   
