@@ -1,9 +1,9 @@
-
+<h1>Board List Page</h1>
 <div class="row">	
-	<div class="col-xs-3" ng-repeat="board in boards | filter: {board.uid}" >
-	<!-- <div class="col-xs-3" ng-repeat="board in boards" > -->
-		<div class="panel-heading">
-			{{board.title}}
+	<!-- <div class="col-xs-3" ng-repeat="board in boards | filter: {board.uid}" > -->
+	<div class="col-xs-3" ng-repeat="board in boards" >
+		<div class="panel-heading" ng-cloak>
+			<a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a>
 			<button class="btn btn-danger pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
 			<button class="btn btn-info pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button>
 		</div> <!-- .panel-heading -->
@@ -14,3 +14,4 @@
 		</div> <!-- .panel-body -->
 	</div> <!-- ng-repeat -->
 </div> <!-- .row -->
+
