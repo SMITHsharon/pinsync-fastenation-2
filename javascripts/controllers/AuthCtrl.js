@@ -35,7 +35,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
     }).then((registerComplete) => {
       logMeIn();
     }).catch(() => {
-      console.log("addUser error", error)
+      console.log("addUser error", error);
     });
   };
 
