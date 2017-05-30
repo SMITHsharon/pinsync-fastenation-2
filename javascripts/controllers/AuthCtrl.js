@@ -2,14 +2,14 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
   
   $scope.alerts = [];
   $scope.auth = {
-    email: "a@a.com",
-    password: "123456",
+    email: "test1@a.com",
+    password: "111111",
   };
 
   if ($location.path() === '/logout') {
     AuthFactory.logout();
     $rootScope.user = {};
-    $location.url('/auth');
+    $location.url('/login/register');
   }
 
 
@@ -21,7 +21,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
       console.log("authenticate error", error);
     }).then((user) => {
       $rootScope.user = user;
-      $location.url('fastenation/home');
+      $location.url('/pins/list');
     }).catch();
   };
   
@@ -38,5 +38,9 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
       console.log("addUser error", error);
     });
   };
+
+  $scope.loginUser = () => {
+    logMeIn();
+  }
 
 });
