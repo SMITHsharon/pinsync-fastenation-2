@@ -4,10 +4,10 @@ app.controller("PinListCtrl", function($rootScope, $scope, PinFactory) {
 	let getPins = (boardId) => {
 		PinFactory.getPinList(boardid).then((pinz) => {
 			$scope.pins = pinz;
+			console.log("pins:", $scope.pins);
 		}).catch((error) => {
 			console.log("getPinList error", error);
 		});
 	};
-	console.log("pins:", $scope.pins);
 	getPins();
 });
