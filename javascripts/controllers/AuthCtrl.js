@@ -2,14 +2,14 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
   
   $scope.alerts = [];
   $scope.auth = {
-    email: "test1@a.com",
+    email: "b@b.com",
     password: "111111",
   };
 
   if ($location.path() === '/logout') {
     AuthFactory.logout();
     $rootScope.user = {};
-    $location.url('/login/register');
+    $location.url('/auth');
   }
 
 
