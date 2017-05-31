@@ -4,7 +4,8 @@ app.controller("BoardViewCtrl", function($routeParams, $scope, BoardFactory) {
 
 	console.log("$routeParams", $routeParams);
 
-	BoardFactory.getSingleBoard($routeParams.id)
+	PinFactory.getPinList($routeParams.id)
+	// BoardFactory.getSingleBoard($routeParams.id)
 	.then((results) => {
 		console.log("results.data", results.data);
 		$scope.selectedBoard = results.data;

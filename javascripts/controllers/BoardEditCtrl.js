@@ -1,10 +1,11 @@
-app.controller("ItemEditCtrl", function($location, $routeParams, $scope, BoardFactory) {
+app.controller("BoardEditCtrl", function($location, $routeParams, $scope, BoardFactory) {
+
+console.log("in BoardEditCtrl");
 
 	$scope.newBoard = {};
 
 	BoardFactory.getSingleBoard($routeParams.id)
 	.then((results) => {
-		console.log("results.data", results.data);
 		$scope.newBoard = results.data;
 	})
 	.catch((error) => {
@@ -14,7 +15,8 @@ app.controller("ItemEditCtrl", function($location, $routeParams, $scope, BoardFa
 
 	$scope.addNewBoard = () => {
 		BoardFactory.editBoard($scope.newBoard)
-		.then(() => {
+		.then((resultz) => {
+		// .then(() => {
 			$location.url('/boards/list');
 		})
 		.catch((error) => {

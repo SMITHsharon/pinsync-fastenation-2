@@ -36,6 +36,7 @@ app.factory("BoardFactory", function($http, $q, FIREBASE_CONFIG) {
 
 
 	let postNewBoard = (newBoard) => {
+console.log("postingNewBoard in Factory");
 		return $q((resolve, reject) => {
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/boards.json`, JSON.stringify(newBoard))
 			.then((resultz) => {
@@ -48,12 +49,12 @@ app.factory("BoardFactory", function($http, $q, FIREBASE_CONFIG) {
 	};
 
 
-	let editBoard = (id) => {
+	let editBoard = (board) => {
 		return $q((resolve, reject) => {
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/boards/${board.id}.json`, JSON.stringify({
 		        description: board.description,
 		        timestamp: board.timestamp,
-		        title: board.timestamp,
+		        title: board.title,
 		        uid: board.uid
 		      }))
 			.then((resultz) => {
