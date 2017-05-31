@@ -1,1 +1,1 @@
-var app = angular.module("FastenationApp", ["ngRoute"]);
+var app = angular.module("FastenationApp", ["ngAnimate", "ngRoute", "ui.bootstrap", "ngSanitize"]);
