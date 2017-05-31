@@ -1,12 +1,13 @@
 app.controller("PinListCtrl", function($rootScope, $scope, PinFactory) {
-	$scope.pinz = [];
-	boardId = "global";
+	$scope.pins = [];
+	let boardid = "global";
 	let getPins = (boardId) => {
-		PinFactory.getPinList(boardId).then((pinz) => {
-			$scope.pinz = pinz;
+		PinFactory.getPinList(boardid).then((pinz) => {
+			$scope.pins = pinz;
 		}).catch((error) => {
 			console.log("getPinList error", error);
 		});
 	};
+	console.log("pins:", $scope.pins);
 	getPins();
 });
