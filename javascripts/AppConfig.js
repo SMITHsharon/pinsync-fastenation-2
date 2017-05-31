@@ -55,7 +55,7 @@ app.config(function($routeProvider) {
       resolve : {isAuth}
     })
     .when('/board/view/:id', {
-      templateUrl: 'partials/board-list.html',
+      templateUrl: 'partials/pin-list.html',
       controller: 'BoardViewCtrl',
       resolve : {isAuth}
     })
