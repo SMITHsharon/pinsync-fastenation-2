@@ -40,7 +40,7 @@ app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthFactory) {
 
 app.config(function($routeProvider) {
   $routeProvider
-    .when('login/register', {
+    .when('/auth', {
       templateUrl: 'partials/auth.html',
       controller: 'AuthCtrl'
     })
@@ -55,7 +55,7 @@ app.config(function($routeProvider) {
       resolve : {isAuth}
     })
     .when('/board/view/:id', {
-      templateUrl: 'partials/board-list.html',
+      templateUrl: 'partials/pin-list.html',
       controller: 'BoardViewCtrl',
       resolve : {isAuth}
     })

@@ -21,7 +21,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
       console.log("authenticate error", error);
     }).then((user) => {
       $rootScope.user = user;
-      $location.url('fastenation/home');
+      $location.url('/pins/list');
     }).catch();
   };
   
