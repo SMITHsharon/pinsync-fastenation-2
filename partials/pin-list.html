@@ -3,7 +3,7 @@
     <div class="thumbnail">
       <img src="{{pins[$index].imageURL}}">
       <div class="caption">
-        <h3><a ng-href="{{pins[$index].imageURL}}">{{pins[$index].title}}</a></h3>
+        <h3><a ng-href="{{pins[$index].URL}}">{{pins[$index].title}}</a></h3>
         <p>{{pins[$index].description}}</p>
         <p><button ng-click="pinToBoard(pinId)" class="btn btn-default">Pin It!</button></p>
       </div>
@@ -13,7 +13,7 @@
     <div class="thumbnail">
       <img src="{{pins[$index+1].imageURL}}">
       <div class="caption">
-        <h3>{{pins[$index+1].title}}</h3>
+        <h3><a ng-href="{{pins[$index+1].URL}}">{{pins[$index+1].title}}</a></h3>
         <p>{{pins[$index+1].description}}</p>
         <p><button ng-click="pinToBoard(pinId)" class="btn btn-default">Pin It!</button></p>
       </div>
@@ -23,7 +23,7 @@
     <div class="thumbnail">
       <img src="{{pins[$index+2].imageURL}}">
       <div class="caption">
-        <h3>{{pins[$index+2].title}}</h3>
+        <h3><a ng-href="{{pins[$index2].URL}}">{{pins[$index+2].title}}</a></h3>
         <p>{{pins[$index+2].description}}</p>
         <p><button ng-click="pinToBoard(pinId)" class="btn btn-default">Pin It!</button></p>
       </div>
@@ -33,7 +33,7 @@
     <div class="thumbnail">
       <img src="{{pins[$index+3].imageURL}}">
       <div class="caption">
-        <h3>{{pins[$index+3].title}}</h3>
+        <h3><a ng-href="{{pins[$index+3].URL}}">{{pins[$index+3].title}}</a></h3>
         <p>{{pins[$index+3].description}}</p>
         <p><button ng-click="pinToBoard(pinId)" class="btn btn-default">Pin It!</button></p>
       </div>
