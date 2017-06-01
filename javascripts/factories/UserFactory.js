@@ -34,6 +34,14 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     });
   };
+  let editEmail = (newEmail) => {
+    var user = firebase.auth().currentUser;
+      user.updateEmail(newEmail).then(function() {
+        console.log("email updated");
+    }, function(error) {
+        // An error happened.
+    });
+  }
 
   let editUser = (id, updatedInfo) => {
     return $q((resolve, reject) => {
@@ -49,5 +57,5 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
       });
     });
   };
-  return {addUser:addUser, getUser:getUser, editUser:editUser};
+  return {addUser:addUser, getUser:getUser, editUser:editUser, editEmail:editEmail};
 });

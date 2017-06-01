@@ -19,12 +19,9 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
     getUserInfo();
     
     $scope.updateUser = () => {
-    	var user = firebase.auth().currentUser;
-    	user.updateEmail($scope.userUpdate.email).then(function() {
-  			$location.url('/user/profile');
-		}, function(error) {
-  			// An error happened.
-		});
+    	
+    	UserFactory.editEmail($scope.userUpdate.email);
+
 		console.log($rootScope.user.uid);
 		UserFactory.editUser($rootScope.user.uid, $scope.userUpdate).then(() => {
 			console.log("working edit user?");
