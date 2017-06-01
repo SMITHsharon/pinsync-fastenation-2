@@ -1,17 +1,20 @@
-app.controller("BoardViewCtrl", function($routeParams, $scope, BoardFactory) {
+app.controller("BoardViewCtrl", function($routeParams, $scope, BoardFactory, PinFactory) {
 
-	$scope.selectedBoard = {};
+	$scope.pins = [];
 
 	console.log("$routeParams", $routeParams);
 
-	PinFactory.getPinList($routeParams.id)
-	// BoardFactory.getSingleBoard($routeParams.id)
-	.then((results) => {
-		console.log("results.data", results.data);
-		$scope.selectedBoard = results.data;
-	})
-	.catch((error) => {
-		console.log("error on getSingleBoard", error);
-	});
+	let getPins = (boardId) => {
+		PinFactory.getPinList($routeParams.id)
+		.then((pinz) => {
+			console.log("pinz", pinz);
+			$scope.pins = pinz.data;
+		})
+		.catch((error) => {
+			console.log("error on getPins", error);
+		});
+	};
+
+	getPins();
 
 });
