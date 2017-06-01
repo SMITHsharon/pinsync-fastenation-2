@@ -48,12 +48,12 @@ app.factory("BoardFactory", function($http, $q, FIREBASE_CONFIG) {
 	};
 
 
-	let editBoard = (id) => {
+	let editBoard = (board) => {
 		return $q((resolve, reject) => {
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/boards/${board.id}.json`, JSON.stringify({
 		        description: board.description,
-		        timestamp: board.timestamp,
-		        title: board.timestamp,
+// timestamp: board.timestamp,
+		        title: board.title,
 		        uid: board.uid
 		      }))
 			.then((resultz) => {

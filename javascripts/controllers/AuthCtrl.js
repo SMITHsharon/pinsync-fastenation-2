@@ -41,6 +41,6 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
 
   $scope.loginUser = () => {
     logMeIn();
-  }
+  };
 
 });
