@@ -1,4 +1,4 @@
-app.controller("BoardAddCtrl", function($rootScope, $http, $location, $q, $scope, FIREBASE_CONFIG, BoardFactory) {
+app.controller("BoardAddCtrl", function($http, $location, $q, $rootScope, $scope, FIREBASE_CONFIG, BoardFactory) {
 
 	$scope.addNewBoard = () => {
 		// calling getuser() better than using $rootScope ...
