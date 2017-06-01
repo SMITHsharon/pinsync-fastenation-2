@@ -34,6 +34,28 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     });
   };
+  let editEmail = (newEmail) => {
+    var user = firebase.auth().currentUser;
+      user.updateEmail(newEmail).then(function() {
+    }, function(error) {
+        // An error happened.
+    });
+  }
 
-  return {addUser:addUser, getUser:getUser};
+  let editUser = (id, updatedInfo) => {
+    console.log("id", id);
+    return $q((resolve, reject) => {
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/users/${id}.json`, JSON.stringify({
+            username: updatedInfo.name,
+            imageURL: updatedInfo.imageURL
+      }))
+      .then((resultz) => {
+        resolve(resultz);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+    });
+  };
+  return {addUser:addUser, getUser:getUser, editUser:editUser, editEmail:editEmail};
 });
