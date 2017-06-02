@@ -15,7 +15,7 @@ app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory
 
 	$scope.viewPin = (id) => {
 		console.log("pin ID", id);
-		$location.url(`/pin/view/${id}`)
-	}
+		$location.url(`/pin/view/${id}`);
+	};
 
 });
