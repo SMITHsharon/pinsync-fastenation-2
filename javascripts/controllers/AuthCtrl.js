@@ -28,6 +28,7 @@ app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope,
   $scope.registerUser = () => {
     AuthFactory.registerWithEmail($scope.auth).then((registeredUser) => {
       $scope.auth.uid = registeredUser.uid;
+      console.log("console from registerUser", registeredUser);
       return UserFactory.addUser($scope.auth);
     }, (error) => {
       $scope.alerts.push({msg: error.message});

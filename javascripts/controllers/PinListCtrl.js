@@ -1,4 +1,6 @@
+
 app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory) {
+
 	$scope.pins = [];
 	let boardid = "global";
 	let getPins = (boardId) => {
@@ -10,8 +12,10 @@ app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory
 		});
 	};
 	getPins();
+
 	$scope.viewPin = (id) => {
 		console.log("pin ID", id);
 		$location.url(`/pin/view/${id}`)
 	}
+
 });

@@ -2,7 +2,7 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
 
   let addUser = (authData) => {
     return $q((resolve, reject) => {
-      console.log(authData);
+      console.log("consoling auth", authData);
       $http.post(`${FIREBASE_CONFIG.databaseURL}/users.json`, 
         JSON.stringify({ 
           uid: authData.uid,
@@ -26,6 +26,7 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
           let users = [];
           Object.keys(userObject.data).forEach((key) => {
             users.push(userObject.data[key]);
+            users[0].id = key;
           });
           resolve(users[0]);
         })
@@ -34,6 +35,30 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     });
   };
+  let editEmail = (newEmail) => {
+    var user = firebase.auth().currentUser;
+      user.updateEmail(newEmail).then(function() {
+    }, function(error) {
+        // An error happened.
+    });
+  }
 
-  return {addUser:addUser, getUser:getUser};
+  let editUser = (id, updatedInfo) => {
+    console.log("id", id);
+    return $q((resolve, reject) => {
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/users/${id.id}.json`, JSON.stringify({
+            name: updatedInfo.name,
+            imageURL: updatedInfo.imageURL,
+            uid: id.uid,
+            id: id.id
+      }))
+      .then((resultz) => {
+        resolve(resultz);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+    });
+  };
+  return {addUser:addUser, getUser:getUser, editUser:editUser, editEmail:editEmail};
 });

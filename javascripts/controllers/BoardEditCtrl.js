@@ -15,8 +15,7 @@ console.log("in BoardEditCtrl");
 
 	$scope.addNewBoard = () => {
 		BoardFactory.editBoard($scope.newBoard)
-		.then((resultz) => {
-		// .then(() => {
+		.then(() => {
 			$location.url('/boards/list');
 		})
 		.catch((error) => {

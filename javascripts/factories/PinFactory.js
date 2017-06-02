@@ -56,4 +56,4 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 	};
 
 	return {getPinList:getPinList, viewSinglePin:viewSinglePin, postNewPin:postNewPin, deletePin:deletePin};
-});
+};
