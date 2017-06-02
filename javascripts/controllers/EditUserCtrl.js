@@ -17,14 +17,11 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
   };
 
     getUserInfo();
+    console.log("button click object: ", $scope.userUpdate);
     
     $scope.updateUser = () => {
-    	
     	UserFactory.editEmail($scope.userUpdate.email);
-
-		console.log($rootScope.user.uid);
-		UserFactory.editUser($rootScope.user.uid, $scope.userUpdate).then(() => {
-			console.log("working edit user?");
+		UserFactory.editUser($rootScope.user, $scope.userUpdate).then((results) => {
 		}).catch((error) => {
 			console.log("update user error: ", error);
 		});
