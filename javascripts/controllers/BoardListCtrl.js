@@ -8,14 +8,18 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 		BoardFactory.getBoardList($rootScope.user.uid)
 		.then((boardz) => {
 			$scope.boards = boardz;
+			getPins();
 		})
 		.catch((error) => {
 			console.log("error on getBoardList", error);
 		});
 	};
 
-	let getPins = (boardId) => {
-		PinFactory.getPinList($routeParams.id)
+
+	let getPins = () => {
+
+		let boardId = "global";
+		PinFactory.getPinList(boardId)
 		.then((pinz) => {
 			$scope.pins = pinz;
 		})
@@ -24,26 +28,16 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 		});
 	};
 
-	// let getBoards = () => {
+	$scope.hoverIn = function(){
+	    this.hoverOver = true;
+	};
 
-	// 	BoardFactory.getBoardList($rootScope.user.uid)
-	// 	.then((boardz) => {
-	// 		$scope.boards = boardz;
-	// 	}).then((PinFactory.getPinList($routeParams.id) => {
-	// 		.then((pinz) => {
-	// 			$scope.pins = pinz;
-	// 		})
-	// 		.catch((error) => {
-	// 			console.log("error in getPinList", error);
-	// 		})
-	// 	})
-	// 	.catch((error) => {
-	// 		console.log("error on getBoardList", error);
-	// 	});
-	// };
+	$scope.hoverOut = function(){
+	    this.hoverOver = false;
+	};
 
 	getBoards();
-	getPins();
+
 
 
 	$scope.deleteBoard = (boardId) => {

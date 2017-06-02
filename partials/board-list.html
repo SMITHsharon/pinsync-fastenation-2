@@ -1,22 +1,35 @@
 <h1>Board List Page</h1>
-<div class="row"B>	
-	<div class="col-xs-3 panel panel-default" ng-repeat="board in boards">
-		<div class="panel-heading" ng-cloak>
-			<a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a>
+<div class="row boardListPage">	
+	<div class="col-xs-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+		<!-- <div class="panel-heading" ng-cloak> -->
+			<!-- <a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a>
 
-			<button class="btn btn-danger pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
+			<button ng-show="hoverOver" class="btn btn-danger btn-xs pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
 			
-			<button class="btn btn-info pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button>
-		</div> <!-- .panel-heading -->
+			<button ng-show="hoverOver" class="btn btn-default btn-xs pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button> -->
+
+		<!-- </div>  .panel-heading -->
 
 		<div class="panel-body">
-			{{board.description}}
-			<!-- Created: {{board:timestamp}} -->
+			<!-- <div>{{board.description}}</div> -->
 
-			<div class="thumbnail col-xs-4" ng-repeat="pin in pins">
+			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: boardid ">
 				 <img src="{{pins[$index].imageURL}}">
 			</div> <!-- pins on board .div -->
 
+			<div class="boardTitle">
+				<h3><a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a></h3>
+
+				<button ng-show="hoverOver" class="btn btn-danger btn-xs pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
+						
+				<button ng-show="hoverOver" class="btn btn-default btn-xs pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button>
+
+			</div>
+
+			<div class="boardDesc">{{board.description}}
+			</div>
+							 
+			
 		</div> <!-- .panel-body -->
 	</div> <!-- ng-repeat -->
 </div> <!-- .row -->
