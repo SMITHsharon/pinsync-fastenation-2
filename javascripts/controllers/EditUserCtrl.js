@@ -21,10 +21,7 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
     
     $scope.updateUser = () => {
     	UserFactory.editEmail($scope.userUpdate.email);
-		console.log($rootScope.user.uid);
-		UserFactory.editUser($rootScope.user.uid, $scope.userUpdate).then((results) => {
-			console.log("update user function results: ", results);
-			console.log("working edit user?");
+		UserFactory.editUser($rootScope.user, $scope.userUpdate).then((results) => {
 		}).catch((error) => {
 			console.log("update user error: ", error);
 		});
