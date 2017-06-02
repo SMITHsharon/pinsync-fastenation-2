@@ -4,6 +4,7 @@ app.controller("PinViewCtrl", function($routeParams, $location, $scope, PinFacto
 	console.log($routeParams.id)
 	PinFactory.viewSinglePin($routeParams.id)
 	.then((results) => {
+		
 		$scope.selectedPin = results.data;
 	})
 	.catch((error) => {
