@@ -32,5 +32,28 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 			});
 		});
 	};
-	return {getPinList:getPinList, viewSinglePin:viewSinglePin};
+
+	let postNewPin = (newPin) => {
+		return $q((resolve, reject) => {
+			$http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`, JSON.stringify(newPin))
+			.then((results) => {
+				resolve(results);
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
+
+	let deletePin = (pinId) => {
+		return $q((resolve, reject) => {
+			$http.delete(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
+			.then((results) => {
+				resolve(results);
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
+
+	return {getPinList:getPinList, viewSinglePin:viewSinglePin, postNewPin:postNewPin, deletePin:deletePin};
 });
