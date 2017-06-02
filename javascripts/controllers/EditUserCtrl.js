@@ -28,6 +28,6 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
 		}).catch((error) => {
 			console.log("update user error: ", error);
 		});
-    }
+    };
 
 });

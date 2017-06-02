@@ -12,6 +12,11 @@
 		<div class="panel-body">
 			{{board.description}}
 			<!-- Created: {{board:timestamp}} -->
+
+			<div class="thumbnail col-xs-4" ng-repeat="pin in pins">
+				 <img src="{{pins[$index].imageURL}}">
+			</div> <!-- pins on board .div -->
+
 		</div> <!-- .panel-body -->
 	</div> <!-- ng-repeat -->
 </div> <!-- .row -->
