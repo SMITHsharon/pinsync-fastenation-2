@@ -19,5 +19,19 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 			});
 		});
 	};
-	return {getPinList:getPinList};
+
+	let viewSinglePin = (id) => {
+		return $q((resolve, reject) => {
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/pins/${id}.json`)
+			.then((results) => {
+				// results.id = id
+				console.log("results in PinFactory", results);
+				resolve(results);
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
+	return {getPinList:getPinList, viewSinglePin:viewSinglePin};
+
 });
