@@ -12,8 +12,10 @@
 
 		<div class="panel-body">
 			<!-- <div>{{board.description}}</div> -->
-
-			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: boardid ">
+<!-- <div ng-repeat="user in users | filter:{'id':  1}:true"> -->
+<!-- https://stackoverflow.com/questions/20292638/angular-filter-exactly-on-object-key -->
+<!-- <div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter:{'pin.boardid':'board.id'}:true"> -->
+			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: {boardid} ">
 				 <img src="{{pins[$index].imageURL}}">
 			</div> <!-- pins on board .div -->
 

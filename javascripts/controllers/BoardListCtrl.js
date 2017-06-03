@@ -8,7 +8,11 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 		BoardFactory.getBoardList($rootScope.user.uid)
 		.then((boardz) => {
 			$scope.boards = boardz;
-			getPins();
+console.log("$scope.boards :: ", $scope.boards);
+			for (let i=0; i<$scope.boards.length; i++) {
+console.log("in for loop // i // $scope.boards[i].id :: ", i, $scope.boards[i].id);
+				getPins($scope.boards[i].id);
+			}
 		})
 		.catch((error) => {
 			console.log("error on getBoardList", error);
@@ -16,9 +20,8 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 	};
 
 
-	let getPins = () => {
+	let getPins = (boardId) => {
 
-		let boardId = "global";
 		PinFactory.getPinList(boardId)
 		.then((pinz) => {
 			$scope.pins = pinz;
