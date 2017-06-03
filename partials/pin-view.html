@@ -10,9 +10,8 @@
 	<h3>Pick a board for your pin!</h3>
 	<div ng-repeat="board in userBoards" class="radio">
 		<label  class="radio-inline">
-		  <input type="radio" name="whichBoard" ng-model="boardValue" ng-value="{{board.id}}"> {{board.title}}
+		  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
 		</label>
 	</div>
-	<p>{{boardValue}}</p>
 	<button ng-click="addToBoard(boardValue)">Add Pin</button>
 </div>
