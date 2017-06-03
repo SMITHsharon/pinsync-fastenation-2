@@ -21,8 +21,8 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$locatio
 		$scope.userBoards = results;
 		console.log($scope.userBoards);
 	}).catch((error) => {
-		console.log("boardList error", error)
-	})
+		console.log("boardList error", error);
+	});
 
 	$scope.addToBoard = (boardId) => {
 		console.log(boardId);
