@@ -4,3 +4,6 @@
 
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
+
+.boardListPage .boardTitle {
+  display: block; }
