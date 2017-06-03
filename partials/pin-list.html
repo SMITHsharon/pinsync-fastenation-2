@@ -2,7 +2,6 @@
     <input type="text" name="" placeholder="Filter Pins..." ng-model="searchText">
 <div ng-repeat="pin in pins | filter: searchText">
   <div class="col-sm-6 col-md-3" ng-click="viewPin(pin.id)">
-<!--    <a ng-href="#!/pins/view/{{pin.id}}" -->
    <div class="thumbnail">
       <img src="{{pin.imageURL}}">
       <div class="caption">
