@@ -1,4 +1,4 @@
-app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope, PinFactory, BoardFactory){
+app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$location, PinFactory, BoardFactory){
 	$scope.selectedPin = {};
 
 	$scope.getBoardList = {}
@@ -20,9 +20,17 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope, PinFact
 	.then((results) => {
 		$scope.userBoards = results;
 		console.log($scope.userBoards);
+	}).catch((error) => {
+		console.log("boardList error", error)
 	})
 
 	$scope.addToBoard = (boardId) => {
 		console.log(boardId);
-	}
+		$scope.selectedPin.boardid = boardId;
+		PinFactory.postNewPin($scope.selectedPin).then((results) => {
+			$location.url("/pins/list");
+		}).catch((error) => {
+			console.log("add pin to Board error", error);
+		});
+	};
 });

@@ -7,13 +7,8 @@ app.controller("PinAddCtrl", function($rootScope, $http, $q, $location, FIREBASE
 		//$scope.newPin.uid = $rootScope.user.uid;
 		console.log("pin add controller");
 
-
-	$scope.addNewPin = () => {
-		if($location.path()==='/pin/new'){
-			$scope.newPin.boardid = "global";
-		} else {
-			$scope.newPin.boardid = boardId;
-		}
+	$scope.addNewPin = (boardId) => {
+		$scope.newPin.boardid = "global";
 		PinFactory.postNewPin($scope.newPin).then(() => {
 			$scope.newPin = {};
 			$location.url("/pins/list");
