@@ -1,9 +1,9 @@
 <h1>Board List Page</h1>
 <div class="row boardListPage">	
-	<div class="col-xs-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+	<div class="col-sm-6 col-md-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 
 		<div class="panel-body">
-			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: board.id "><h1>test</h1>
+			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: board.id ">
 				 <img src="{{pin.imageURL}}">
 			</div> <!-- pins on board .div -->
 

@@ -1,2 +1,6 @@
-.boardListPage div:hover {
+.boardListPage .panel {
+  border: none;
   background-color: #EBF2F5; }
+
+.boardListPage .panel:hover {
+  border: 10px solid #d1e0e0; }
