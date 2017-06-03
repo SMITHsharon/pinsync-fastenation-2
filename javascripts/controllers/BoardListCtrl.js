@@ -3,17 +3,18 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 	$scope.boards = [];
 	$scope.pins = [];
 
+
 	let getBoards = () => {
 
 		BoardFactory.getBoardList($rootScope.user.uid)
 		.then((boardz) => {
 			$scope.boards = boardz;
-console.log("$scope.boards :: ", $scope.boards);
 			for (let i=0; i<$scope.boards.length; i++) {
-console.log("in for loop // i // $scope.boards[i].id :: ", i, $scope.boards[i].id);
 				getPins($scope.boards[i].id);
 			}
+
 		})
+
 		.catch((error) => {
 			console.log("error on getBoardList", error);
 		});
@@ -21,15 +22,18 @@ console.log("in for loop // i // $scope.boards[i].id :: ", i, $scope.boards[i].i
 
 
 	let getPins = (boardId) => {
-
 		PinFactory.getPinList(boardId)
 		.then((pinz) => {
-			$scope.pins = pinz;
+			pinz.forEach((pin) => {
+				$scope.pins.push(pin);
+			});
+			console.log("$scope.pins", $scope.pins);
 		})
 		.catch((error) => {
 			console.log("error on getPins", error);
 		});
 	};
+
 
 	$scope.hoverIn = function(){
 	    this.hoverOver = true;
