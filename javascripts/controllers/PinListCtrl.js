@@ -1,7 +1,8 @@
 
 app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory) {
-
+	$scope.title = "What's your FasteNation?";
 	$scope.pins = [];
+	$scope.addPin=true;
 	let boardid = "global";
 	let getPins = (boardId) => {
 		PinFactory.getPinList(boardid).then((pinz) => {
@@ -13,8 +14,6 @@ app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory
 	getPins();
 
 	$scope.viewPin = (id) => {
-
-		console.log("pin ID", id);
 		$location.url(`/pin/view/${id}`);
 	};
 

@@ -3,9 +3,21 @@
 <div>
     <p>{{selectedPin.description}}</p>
 </div>
-<button ng-click="pinToBoard()">Pin it!</button>
+<div ng-show="!pinIt">
+    <button class="btn btn-danger fa fa-trash-o" ng-click="deletePin()"></button>
+    <button ng-click="pinToNewBoard()">Pin to a New Board</button>
+</div>
 <div ng-show="pinIt">
-	<h3>Pick a board for your pin!</h3>
+	<h3>Pin to a Board!</h3>
+	<div ng-repeat="board in userBoards" class="radio">
+		<label  class="radio-inline">
+		  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
+		</label>
+	</div>
+	<button ng-click="addToBoard(boardValue)">Add Pin</button>
+</div>
+<div ng-show="newBoard">
+	<h3>Pin to a Board!</h3>
 	<div ng-repeat="board in userBoards" class="radio">
 		<label  class="radio-inline">
 		  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
