@@ -29,50 +29,42 @@
         "board0": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
             "title": "What",
-            "description": "Whatevs",
-            "timestamp": "tba"
+            "description": "Whatevs"
         },
         "board1": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
             "title": "Factals",
-            "description": "Fractals",
-            "timestamp": "tba"
+            "description": "Fractals"
         },
         "board2": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
             "title": "Kites",
-            "description": "Coolest kites ever",
-            "timestamp": "tba"
+            "description": "Coolest kites ever"
         },
         "board3": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
             "title": "Storms",
-            "description": "Weather watching",
-            "timestamp": "tba"
+            "description": "Weather watching"
         },
         "board4": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
             "title": "Cookies!",
-            "description": "I want to eat all the cookies!",
-            "timestamp": "tba"
+            "description": "I want to eat all the cookies!"
         },
         "board5": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
             "title": "Cakes!",
-            "description": "Let them eat cake!",
-            "timestamp": "tba"
+            "description": "Let them eat cake!"
         },
         "board6": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
             "title": "Kittens",
-            "description": "Mew Mew Mew!",
-            "timestamp": "tba"
+            "description": "Mew Mew Mew!"
         },
         "board7": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
             "title": "Mittens",
-            "description": "Eep Eep!",
-            "timestamp": "tba"
+            "description": "Eep Eep!"
         }
     },
     "pins": {
@@ -82,17 +74,14 @@
             "URL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "imageURL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "title": "rainbowed fractal",
-            "description": "rainbowed fractal",
-            "timestamp": "tba"
-        },
+            "description": "rainbowed fractal"        },
         "pin01": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
             "boardid": "board0",
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "title": "umbrella fractal",
-            "description": "umbrella fractal",
-            "timestamp": "tba"
+            "description": "umbrella fractal"
         },
         "pin02": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -100,8 +89,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "title": "snow fractal",
-            "description": "snow fractal",
-            "timestamp": "tba"
+            "description": "snow fractal"
         },
         "pin03": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -109,8 +97,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "title": "web fractal",
-            "description": "web fractal",
-            "timestamp": "tba"
+            "description": "web fractal"
         },
         "pin04": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -118,8 +105,7 @@
             "URL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "imageURL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "title": "rainbowed fractal",
-            "description": "rainbowed fractal",
-            "timestamp": "tba"
+            "description": "once upon a midnight dreary"
         },
         "pin05": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -127,8 +113,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "title": "umbrella fractal",
-            "description": "umbrella fractal",
-            "timestamp": "tba"
+            "description": "while i pondered, weak and weary"
         },
         "pin06": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -136,8 +121,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "title": "snow fractal",
-            "description": "snow fractal",
-            "timestamp": "tba"
+            "description": "over many a quaint and curious volume of forgotten lore"
         },
         "pin07": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -145,8 +129,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "title": "web fractal",
-            "description": "web fractal",
-            "timestamp": "tba"
+            "description": "while i nodded, nearly napping"
         },
         "pin08": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -154,8 +137,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "title": "Bug Kite",
-            "description": "this guy is CRAZY!",
-            "timestamp": "tba"
+            "description": "this guy is CRAZY!"
         },
         "pin09": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -163,8 +145,7 @@
             "URL": "http://www.gkites.com/update/389-6.JPG",
             "imageURL": "http://www.gkites.com/update/389-6.JPG",
             "title": "Puppy Kites",
-            "description": "lyk no wayz omg",
-            "timestamp": "tba"
+            "description": "lyk no wayz omg"
         },
         "pin10": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -172,8 +153,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "title": "purple lightning",
-            "description": "scary pic of purple lightning (my fav color)",
-            "timestamp": "tba"
+            "description": "scary pic of purple lightning (my fav color)"
         },
         "pin11": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -181,8 +161,7 @@
             "URL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "imageURL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "title": "tree in the wind",
-            "description": "wouldn't wanna be this guy!",
-            "timestamp": "tba"
+            "description": "wouldn't wanna be this guy!"
         },
         "pin12": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -190,8 +169,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "title": "Bug Kite",
-            "description": "this guy is CRAZY!",
-            "timestamp": "tba"
+            "description": "this guy is CRAZY!"
         },
         "pin13": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -199,8 +177,7 @@
             "URL": "http://www.gkites.com/update/389-6.JPG",
             "imageURL": "http://www.gkites.com/update/389-6.JPG",
             "title": "Puppy Kites",
-            "description": "lyk no wayz omg",
-            "timestamp": "tba"
+            "description": "lyk no wayz omg"
         },
         "pin14": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -208,8 +185,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "title": "purple lightning",
-            "description": "scary pic of purple lightning (my fav color)",
-            "timestamp": "tba"
+            "description": "scary pic of purple lightning (my fav color)"
         },
         "pin15": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
@@ -217,8 +193,7 @@
             "URL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "imageURL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "title": "tree in the wind",
-            "description": "wouldn't wanna be this guy!",
-            "timestamp": "tba"
+            "description": "wouldn't wanna be this guy!"
         },
         "pin16": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -226,8 +201,7 @@
             "URL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "imageURL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "title": "candy cookie",
-            "description": "m&m cookie",
-            "timestamp": "tba"
+            "description": "m&m cookie"
         },
         "pin17": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -235,8 +209,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "title": "Fancy Cookies",
-            "description": "decorated sugar cookies",
-            "timestamp": "tba"
+            "description": "decorated sugar cookies"
         },
         "pin18": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -244,8 +217,7 @@
             "URL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "imageURL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "title": "Strawbery Cake",
-            "description": "Yum!",
-            "timestamp": "tba"
+            "description": "Yum!"
         },
         "pin19": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -253,8 +225,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "title": "Cherry Blossom Cake",
-            "description": "so pretty!",
-            "timestamp": "tba"
+            "description": "so pretty!"
         },
         "pin20": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -262,8 +233,7 @@
             "URL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "imageURL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "title": "candy cookie",
-            "description": "m&m cookie",
-            "timestamp": "tba"
+            "description": "m&m cookie"
         },
         "pin21": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -271,8 +241,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "title": "Fancy Cookies",
-            "description": "decorated sugar cookies",
-            "timestamp": "tba"
+            "description": "decorated sugar cookies"
         },
         "pin22": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -280,8 +249,7 @@
             "URL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "imageURL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "title": "Strawbery Cake",
-            "description": "Yum!",
-            "timestamp": "tba"
+            "description": "Yum!"
         },
         "pin23": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -289,8 +257,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "title": "Cherry Blossom Cake",
-            "description": "so pretty!",
-            "timestamp": "tba"
+            "description": "so pretty!"
         },
         "pin24": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -298,8 +265,7 @@
             "URL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "imageURL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "title": "milky",
-            "description": "yum",
-            "timestamp": "tba"
+            "description": "yum"
         },
         "pin25": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -307,8 +273,7 @@
             "URL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "imageURL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "title": "mellow",
-            "description": "marshy",
-            "timestamp": "tba"
+            "description": "marshy"
         },
         "pin26": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -316,8 +281,7 @@
             "URL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "imageURL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "title": "kitten",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         },
         "pin27": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -325,8 +289,7 @@
             "URL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "imageURL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "title": "love",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         },
         "pin28": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -334,8 +297,7 @@
             "URL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "imageURL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "title": "milky",
-            "description": "yum",
-            "timestamp": "tba"
+            "description": "yum"
         },
         "pin29": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -343,8 +305,7 @@
             "URL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "imageURL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "title": "mellow",
-            "description": "marshy",
-            "timestamp": "tba"
+            "description": "marshy"
         },
         "pin30": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -352,8 +313,7 @@
             "URL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "imageURL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "title": "kitten",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         },
         "pin31": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -361,8 +321,7 @@
             "URL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "imageURL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "title": "love",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         },
          "pin32": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -370,8 +329,7 @@
             "URL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "imageURL": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGvyR8yMsNJ_G6BM3vQNxbuQdBC6HNGd0-fv2R0XqRwON_myJzw",
             "title": "rainbowed fractal",
-            "description": "rainbowed fractal",
-            "timestamp": "tba"
+            "description": "rainbowed fractal"
         },
         "pin33": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -379,8 +337,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/c3/e7/27/c3e72742dfb048835c8389720942affe.jpg",
             "title": "umbrella fractal",
-            "description": "umbrella fractal",
-            "timestamp": "tba"
+            "description": "umbrella fractal"
         },
         "pin34": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -388,8 +345,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvV4XaDg56nl0FgEOcZinEd5H7cnCxJ7tp_p8ts0-VrLKOih3",
             "title": "snow fractal",
-            "description": "snow fractal",
-            "timestamp": "tba"
+            "description": "snow fractal"
         },
         "pin35": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
@@ -397,8 +353,7 @@
             "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRjBlxlj6v3pqzzfAcvPaLXASrmbWhZAYuTNSqrOpLg5z8NHG",
             "title": "web fractal",
-            "description": "web fractal",
-            "timestamp": "tba"
+            "description": "web fractal"
         },
         "pin36": {
             "uid": "Xo740wrxJHeybp7Qjk6Ax73AXzi1",
@@ -406,8 +361,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/79/d9/86/79d9862fb655c3c15a80078197bfa88f.jpg",
             "title": "Bug Kite",
-            "description": "this guy is CRAZY!",
-            "timestamp": "tba"
+            "description": "this guy is CRAZY!"
         },
         "pin37": {
             "uid": "Xo740wrxJHeybp7Qjk6Ax73AXzi1",
@@ -415,8 +369,7 @@
             "URL": "http://www.gkites.com/update/389-6.JPG",
             "imageURL": "http://www.gkites.com/update/389-6.JPG",
             "title": "Puppy Kites",
-            "description": "lyk no wayz omg",
-            "timestamp": "tba"
+            "description": "lyk no wayz omg"
         },
         "pin38": {
             "uid": "Xo740wrxJHeybp7Qjk6Ax73AXzi1",
@@ -424,8 +377,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/ea/7e/22/ea7e2227edf4f2bd57379359aca731b4.jpg",
             "title": "purple lightning",
-            "description": "scary pic of purple lightning (my fav color)",
-            "timestamp": "tba"
+            "description": "scary pic of purple lightning (my fav color)"
         },
         "pin39": {
             "uid": "Xo740wrxJHeybp7Qjk6Ax73AXzi1",
@@ -433,8 +385,7 @@
             "URL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "imageURL": "https://dsx.weather.com//util/image/w/ef25fec9-b90d-4368-bb41-1da03aa2fe8e.jpg?v=at&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0",
             "title": "tree in the wind",
-            "description": "wouldn't wanna be this guy!",
-            "timestamp": "tba"
+            "description": "wouldn't wanna be this guy!"
         },
         "pin40": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -442,8 +393,7 @@
             "URL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "imageURL": "https://cdn.shopify.com/s/files/1/0302/2969/products/great-cookie-m_and_m-cookie-03_1024x1024.jpg?v=1390499314",
             "title": "candy cookie",
-            "description": "m&m cookie",
-            "timestamp": "tba"
+            "description": "m&m cookie"
         },
         "pin41": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -451,8 +401,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/51/db/f4/51dbf4e1493d059dafbe5c54f18253fa.jpg",
             "title": "Fancy Cookies",
-            "description": "decorated sugar cookies",
-            "timestamp": "tba"
+            "description": "decorated sugar cookies"
         },
         "pin42": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -460,8 +409,7 @@
             "URL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "imageURL": "http://img1.southernliving.timeinc.net/sites/default/files/styles/story_card_two_thirds/public/image/2016/04/main/strawberry-dream-cake-2428901_0.jpg?itok=zbA9x4WX",
             "title": "Strawbery Cake",
-            "description": "Yum!",
-            "timestamp": "tba"
+            "description": "Yum!"
         },
         "pin43": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
@@ -469,8 +417,7 @@
             "URL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/29/ee/96/29ee96df49e02fae0ecd190bff81adbb.jpg",
             "title": "Cherry Blossom Cake",
-            "description": "so pretty!",
-            "timestamp": "tba"
+            "description": "so pretty!"
         },
         
         "pin44": {
@@ -479,8 +426,7 @@
             "URL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "imageURL": "http://www.petmd.com/sites/default/files/what-to-feed-kitten.jpg",
             "title": "milky",
-            "description": "yum",
-            "timestamp": "tba"
+            "description": "yum"
         },
         "pin45": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -488,8 +434,7 @@
             "URL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "imageURL": "http://weknowyourdreams.com/images/kittens/kittens-07.jpg",
             "title": "mellow",
-            "description": "marshy",
-            "timestamp": "tba"
+            "description": "marshy"
         },
         "pin46": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -497,8 +442,7 @@
             "URL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "imageURL": "https://img0.etsystatic.com/014/0/6891295/il_340x270.418092714_tizq.jpg",
             "title": "kitten",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         },
         "pin47": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
@@ -506,8 +450,7 @@
             "URL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "imageURL": "https://cdn.notonthehighstreet.com/system/product_images/images/001/318/186/original_hidden-message-mittens.jpg",
             "title": "love",
-            "description": "hands",
-            "timestamp": "tba"
+            "description": "hands"
         }
     }
 }
