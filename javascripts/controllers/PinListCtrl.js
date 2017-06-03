@@ -6,7 +6,6 @@ app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory
 	let getPins = (boardId) => {
 		PinFactory.getPinList(boardid).then((pinz) => {
 			$scope.pins = pinz;
-			console.log("pins:", $scope.pins);
 		}).catch((error) => {
 			console.log("getPinList error", error);
 		});
@@ -14,7 +13,6 @@ app.controller("PinListCtrl", function($rootScope, $location, $scope, PinFactory
 	getPins();
 
 	$scope.viewPin = (id) => {
-		console.log("pin ID", id);
 		$location.url(`/pin/view/${id}`)
 	}
 
