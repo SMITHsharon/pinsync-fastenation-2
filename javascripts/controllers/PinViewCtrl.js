@@ -1,7 +1,9 @@
 app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope, PinFactory, BoardFactory){
 	$scope.selectedPin = {};
+
 	$scope.getBoardList = {}
 	$scope.pinIt= false;
+
 	PinFactory.viewSinglePin($routeParams.id)
 	.then((results) => {
 		$scope.selectedPin = results.data;

@@ -28,6 +28,7 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
+
 	let postNewPin = (newPin) => {
 		return $q((resolve, reject) => {
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`, JSON.stringify(newPin))

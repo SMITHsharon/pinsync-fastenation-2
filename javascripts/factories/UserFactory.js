@@ -41,7 +41,7 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
     }, function(error) {
         // An error happened.
     });
-  }
+  };
 
   let editUser = (id, updatedInfo) => {
     console.log("id", id);
