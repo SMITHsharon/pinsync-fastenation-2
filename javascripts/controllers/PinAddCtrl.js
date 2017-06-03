@@ -9,9 +9,10 @@ app.controller("PinAddCtrl", function($rootScope, $http, $q, $location, FIREBASE
 
 	$scope.addNewPin = (boardId) => {
 		$scope.newPin.boardid = "global";
-		PinFactory.postNewPin($scope.newPin).then(() => {
+		PinFactory.postNewPin($scope.newPin).then((results) => {
+			let pinId=results.data.name;
+			$location.url(`/pin/view/${pinId}`);
 			$scope.newPin = {};
-			$location.url("/pins/list");
 		}).catch((error) => {
 			console.log("Add error", error);
 		});
