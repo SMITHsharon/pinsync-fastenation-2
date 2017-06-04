@@ -1,9 +1,13 @@
 .boardListPage .panel {
   border: none;
-  background-color: #EBF2F5; }
+  background-color: #EBF2F5;
+  margin-left: 50px; }
 
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
 
 .boardListPage .boardTitle {
   display: block; }
+
+.newBoardForm button {
+  margin-left: 10px; }

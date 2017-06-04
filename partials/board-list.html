@@ -1,12 +1,15 @@
-<h1>Board List Page</h1>
+<h1>FaseteNating Boards!</h1>
+<div class="container">
 <div class="row boardListPage">
-	<div class="col-md-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+	<div class="col-xs-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 
 		<div class="panel-body">
 				<div ng-repeat="pin in pins | filter: board.id | limitTo: 6 "> 
+					<div class="clearfix" ng-if="$index % 3 == 0"></div>
 						 	<div class="thumbnail col-xs-4">
 						 		<img src="{{pin.imageURL}}">
 						 	</div>
+					
 				</div> <!-- ng-repeat -->
 
 			<div class="row boardTitle">
@@ -27,6 +30,7 @@
 		</div> <!-- .panel-body -->
 	</div> <!-- ng-repeat -->
 </div> <!-- .row -->
+</div>
 
 
 
