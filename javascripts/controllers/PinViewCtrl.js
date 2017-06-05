@@ -55,10 +55,7 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$locatio
 
 	$scope.likePin = () => {
 		$scope.selectedPin.likes = $scope.selectedPin.likes +1;
-		console.log($scope.selectedPin.likes);
-		console.log($scope.selectedPin);
 		PinFactory.editLikes($scope.selectedPin, $routeParams.id).then((results) => {
-			console.log("results in pin view ctrl", results);
 		}).catch((error) => {
 			console.log("edit likes error", error);
 		});

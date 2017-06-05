@@ -52,7 +52,6 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 	};
 
 	let editLikes = (pin, pinId) => {
-		console.log("in factory", pin.id);
 		return $q((resolve, reject) => {
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`,
 				JSON.stringify({
@@ -65,7 +64,6 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 					uid: pin.uid
 				}))
 			.then((results) => {
-				console.log("factory results",results);
 				resolve(results);
 			}).catch((error) => {
 				reject(error);
