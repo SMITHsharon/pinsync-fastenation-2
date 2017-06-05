@@ -2,27 +2,19 @@
     "users": {
         "user0": {
             "uid": "AgVRquyOPkMNSxP1nqNhRz0ro8l1",
-            "name": "Sharon",
-            "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG0XOQJZDmLFBtubVdF_0Cp7BAD9Y5_pazDwkwD5O90JoCnh-l",
-            "username": "a"
+            "username": "Sharon"
         },
         "user1": {
             "uid": "LbGyB7FMwCbF3hlkgeVq1HOz4v52",
-            "name": "Anessa",
-            "imageURL": "https://www.hearingdogs.org.uk/globalassets/sponsor/jade/sponsor-hearing-dog-puppy-jade-280-x-2413.jpg",
-            "username": "b"
+            "username": "Anessa"
         },
         "user2": {
             "uid": "U4araoq24xMec8ukza0CFjznkvl2",
-            "name": "Andrea",
-            "imageURL": "https://yt3.ggpht.com/-V92UP8yaNyQ/AAAAAAAAAAI/AAAAAAAAAAA/zOYDMx8Qk3c/s900-c-k-no-mo-rj-c0xffffff/photo.jpg",
-            "username": "c"
+            "username": "Andrea"
         },
         "user3": {
             "uid": "oWJ7aGqItdRnfwtKSPlpdr4HI5K2",
-            "name": "Heather",
-            "imageURL": "http://az616578.vo.msecnd.net/files/2016/12/05/636165548735526608-1767013013_tumblr_static_19835-red-panda-1920x1200-animal-wallpaper.jpg",
-            "username": "d"
+            "username": "Heather"
         }
     },
     "boards": {

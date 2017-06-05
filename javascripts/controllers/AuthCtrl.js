@@ -1,4 +1,4 @@
-app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope, AuthFactory, UserFactory) 
+app.controller("AuthCtrl", function($location, $rootScope, $routeParams, $scope, AuthFactory, UserFactory) {
   
   $scope.alerts = [];
   $scope.auth = {
