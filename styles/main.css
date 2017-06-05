@@ -15,6 +15,13 @@
   font-family: "Covered By Your Grace", cursive;
   color: #532454; }
 
+.boardListPage .sampleImg {
+  height: 70px;
+  overflow: none; }
+  .boardListPage .sampleImg img {
+    display: block;
+    max-height: 60px; }
+
 .jumbotron {
   padding-bottom: 0px;
   padding-top: 10px;
