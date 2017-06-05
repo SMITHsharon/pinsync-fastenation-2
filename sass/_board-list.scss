@@ -1,6 +1,12 @@
 @import "colors";
+@import "fonts";
 
 .boardListPage {
+
+	h1 {
+		font-family: $script;
+		color: $purple;
+	}
 
 	.panel {
 		border: none;
@@ -18,5 +24,7 @@
 
 	.boardTitle {
 		display: block;
+		font-family: $script;
+		color: $purple;
 	}
 }
