@@ -1,5 +1,13 @@
+@import "colors";
+@import "fonts";
+
 .newBoardForm {
 	
+	h3 {
+		font-family: $script;
+		color: $purple;
+	}
+
 	button {
 		margin-left: 10px;
 	}

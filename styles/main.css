@@ -1,3 +1,7 @@
+.boardListPage h1 {
+  font-family: "Covered By Your Grace", cursive;
+  color: #532454; }
+
 .boardListPage .panel {
   border: none;
   background-color: #EBF2F5;
@@ -6,6 +10,10 @@
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
 
+.boardListPage .boardTitle {
+  display: block;
+  font-family: "Covered By Your Grace", cursive;
+  color: #532454; }
 
 .jumbotron {
   padding-bottom: 0px;
@@ -90,9 +98,9 @@ input {
   width: 100%;
   border-radius: 20px; }
 
-.boardListPage .boardTitle {
-  display: block; }
+.newBoardForm h3 {
+  font-family: "Covered By Your Grace", cursive;
+  color: #532454; }
 
 .newBoardForm button {
   margin-left: 10px; }
-
