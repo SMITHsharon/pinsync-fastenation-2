@@ -6,6 +6,8 @@
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
 
+.boardListPage .boardTitle {
+  display: block; }
 
 .jumbotron {
   padding-bottom: 0px;
@@ -90,9 +92,5 @@ input {
   width: 100%;
   border-radius: 20px; }
 
-.boardListPage .boardTitle {
-  display: block; }
-
 .newBoardForm button {
   margin-left: 10px; }
-

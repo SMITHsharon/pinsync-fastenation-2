@@ -8,7 +8,7 @@ app.controller("myPinsCtrl", function($rootScope, $location, $scope, PinFactory)
 			pinz.forEach((pin) => {
 				if(pin.uid===$rootScope.user.uid){
 					$scope.pins.push(pin);
-				};
+				}
 			});
 		}).catch((error) => {
 			console.log("getPinList error", error);
