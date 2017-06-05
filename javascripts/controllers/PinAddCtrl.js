@@ -1,7 +1,8 @@
-app.controller("PinAddCtrl", function($location, $scope, PinFactory){
+app.controller("PinAddCtrl", function($location, $rootScope, $scope, PinFactory){
 
 	$scope.addNewPin = () => {
 		$scope.newPin.boardid = "global";
+		$scope.newPin.uid = $rootScope.user.uid;
 		PinFactory.postNewPin($scope.newPin).then((results) => {
 			let pinId=results.data.name;
 			$location.url(`/pin/view/${pinId}`);
