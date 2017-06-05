@@ -7,7 +7,7 @@
 			<div class="panel-body">
 					<div ng-repeat="pin in pins | filter: board.id | limitTo: 6 "> 
 						<div class="clearfix" ng-if="$index % 3 == 0"></div>
-							 	<div class="thumbnail col-xs-4">
+							 	<div class="thumbnail col-xs-4 sampleImg">
 							 		<img src="{{pin.imageURL}}">
 							 	</div>
 						

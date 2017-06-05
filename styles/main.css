@@ -15,6 +15,13 @@
   font-family: "Covered By Your Grace", cursive;
   color: #532454; }
 
+.boardListPage .sampleImg {
+  height: 70px;
+  overflow: none; }
+  .boardListPage .sampleImg img {
+    display: block;
+    max-height: 60px; }
+
 .jumbotron {
   padding-bottom: 0px;
   padding-top: 10px;
@@ -69,16 +76,16 @@ input {
   border: 1px solid #f27c6c;
   color: white; }
 
-.thumbnail {
+.pinList .thumbnail {
   height: 400px;
   border: 0px; }
-  .thumbnail img {
+  .pinList .thumbnail img {
     width: 100%;
     height: 200px;
     overflow: hidden; }
-  .thumbnail .panel-footer {
+  .pinList .thumbnail .panel-footer {
     height: 180px; }
-    .thumbnail .panel-footer h3 a {
+    .pinList .thumbnail .panel-footer h3 a {
       font-family: "Covered By Your Grace", cursive;
       color: #532454; }
 
