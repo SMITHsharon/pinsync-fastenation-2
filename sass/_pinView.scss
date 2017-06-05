@@ -1,0 +1,24 @@
+@import "colors";
+@import "fonts";
+
+.pinView {
+	.btn {
+		width: 100px;
+	}
+}
+.pinView {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	h3 {
+		a {
+			color: $purple;
+			font-family: $script;
+			font-size: 4rem;
+		}
+	}
+}
+.fullImage {
+	width: 100%;
+	border-radius: 20px;
+}

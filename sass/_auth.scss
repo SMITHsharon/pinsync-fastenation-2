@@ -1,0 +1,13 @@
+@import "colors";
+@import "fonts";
+
+.btn {
+	margin: 5px;
+	width: 47%;
+	display: inline-block;
+}
+
+input {
+	margin: 5px;
+	border: 1px solid $purple !important;
+}

@@ -1,18 +1,19 @@
-<h1>{{title}}</h1>
-<input type="text" name="" placeholder="Filter Pins..." ng-model="searchText">
-<div ng-repeat="pin in pins | filter: searchText">
-  <div class="col-sm-6 col-md-3" ng-click="viewPin(pin.id)">
-   <div class="thumbnail">
-      <img src="{{pin.imageURL}}">
-      <div class="caption">
-        <h3><a ng-href="{{pin.URL}}">{{pin.title}}</a></h3>
-        <p>{{pin.description}}</p>
-
-        <div ng-show="addPin"><button class="btn btn-default">Pin It!</button></div>
-        <div ng-show="!addPin">
-          <button>EditBoard/Delete</button>
+<div class="container">
+  <input class="form-control form-spacing searchInput" type="text" name="" placeholder="Filter Pins..." ng-model="searchText">
+  <div ng-repeat="pin in pins | filter: searchText">
+    <div class="col-sm-6 col-md-3" ng-click="viewPin(pin.id)">
+      <div class="thumbnail">
+        <img src="{{pin.imageURL}}">
+        <div class="panel-footer">
+          <h3><a ng-href="{{pin.URL}}">{{pin.title}}</a></h3>
+          <p>{{pin.description}}</p>
+          <div ng-show="addPin"><button class="btn btn-default">Pin It!</button></div>
+          <div ng-show="!addPin">
+            <button>EditBoard/Delete</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+  
+</div>

@@ -5,9 +5,18 @@
 	.panel {
 		border: none;
 		background-color: $lightgray;
+		margin-left: 50px;
+	}
+
+	img {
+
 	}
 
 	.panel:hover {
 		border: 10px solid $darkergray;
+	}
+
+	.boardTitle {
+		display: block;
 	}
 }

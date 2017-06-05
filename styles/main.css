@@ -1,6 +1,98 @@
 .boardListPage .panel {
   border: none;
-  background-color: #EBF2F5; }
+  background-color: #EBF2F5;
+  margin-left: 50px; }
 
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
+
+
+.jumbotron {
+  padding-bottom: 0px;
+  padding-top: 10px;
+  background-color: #532454; }
+  .jumbotron .title {
+    margin-left: 20px;
+    margin-bottom: 4rem;
+    font-size: 10rem;
+    color: #532454; }
+  .jumbotron .navbar {
+    border-radius: 0px;
+    background-color: #3f88c8;
+    border-color: #3f88c8;
+    padding: 10px; }
+    .jumbotron .navbar a {
+      color: white; }
+    .jumbotron .navbar li a {
+      color: white; }
+    .jumbotron .navbar li a:hover {
+      color: #d1e0e0; }
+    .jumbotron .navbar .navbar-brand {
+      padding-top: 5px;
+      margin: 0px;
+      font-family: "Covered By Your Grace", cursive;
+      font-size: 2.5rem; }
+    .jumbotron .navbar .logo {
+      display: inline-block;
+      width: 50px;
+      margin-top: 0px; }
+
+.break-white {
+  height: 2rem;
+  width: 100%;
+  background-color: white; }
+
+.btn {
+  margin: 5px;
+  width: 47%;
+  display: inline-block; }
+
+input {
+  margin: 5px;
+  border: 1px solid #532454 !important; }
+
+.searchInput {
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border: 3px solid #f27c6c !important; }
+
+.pinBtn {
+  background-color: #f27c6c;
+  border: 1px solid #f27c6c;
+  color: white; }
+
+.thumbnail {
+  height: 400px;
+  border: 0px; }
+  .thumbnail img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; }
+  .thumbnail .panel-footer {
+    height: 180px; }
+    .thumbnail .panel-footer h3 a {
+      font-family: "Covered By Your Grace", cursive;
+      color: #532454; }
+
+.pinView .btn {
+  width: 100px; }
+
+.pinView {
+  width: 60%;
+  display: block;
+  margin: 0 auto; }
+  .pinView h3 a {
+    color: #532454;
+    font-family: "Covered By Your Grace", cursive;
+    font-size: 4rem; }
+
+.fullImage {
+  width: 100%;
+  border-radius: 20px; }
+
+.boardListPage .boardTitle {
+  display: block; }
+
+.newBoardForm button {
+  margin-left: 10px; }
+
