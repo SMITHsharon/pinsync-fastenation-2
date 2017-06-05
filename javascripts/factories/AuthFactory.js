@@ -41,12 +41,13 @@ app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
   };
 
   //Firebase: GOOGLE - Use input credentials to authenticate user.
-  let authenticateGoogle = () => {
+  let authenticateGoogle = (user) => {
     return $q((resolve, reject) => {
       var provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider)
         .then((authData) => {
           currentUserData = authData.user;
+          console.log("authData", authData);
           resolve(currentUserData);
         }).catch((error) => {
           reject(error);
