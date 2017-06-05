@@ -1,9 +1,9 @@
 #Description
-> Using our Angular skillz - Pinterest Clone
+> Group project using our Angular skillz - Pinterest Clone
 
-The goal is to reverse engineer the basic functionality of Pinterest and build your own version.
+The goal is to reverse engineer the basic functionality of Pinterest and build our own version.
 
-![Screenshot](https://raw.githubusercontent.com/morecallan/CSS-exercise-articles/master/screenshots/Article.png)
+![Screenshot](https://raw.githubusercontent.com/nss-evening-cohort-05/pinsync-fastenation-2/master/images/screangrab.png)
 
 # Requirements
 1. Flat firebase structure.
@@ -15,7 +15,7 @@ The goal is to reverse engineer the basic functionality of Pinterest and build y
 # How to run
 > pull down and run `http-server`
 
-# Contributors
+# Contributors: Team Splice Girls
 [Andrea Finch](https://github.com/aefinch)
 [Sharon Smith](https://github.com/SMITHsharon)
 [Anessa Ortner](https://github.com/anessao)
