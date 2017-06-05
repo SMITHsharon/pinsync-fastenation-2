@@ -4,3 +4,38 @@
 
 .boardListPage .panel:hover {
   border: 10px solid #d1e0e0; }
+
+.jumbotron {
+  padding-bottom: 0px;
+  padding-top: 10px;
+  background-color: #532454; }
+  .jumbotron .title {
+    margin-left: 20px;
+    margin-bottom: 4rem;
+    font-size: 10rem;
+    color: #532454; }
+  .jumbotron .navbar {
+    border-radius: 0px;
+    background-color: #3f88c8;
+    border-color: #3f88c8;
+    padding: 10px; }
+    .jumbotron .navbar a {
+      color: white; }
+    .jumbotron .navbar li a {
+      color: white; }
+    .jumbotron .navbar li a:hover {
+      color: #d1e0e0; }
+    .jumbotron .navbar .navbar-brand {
+      padding-top: 5px;
+      margin: 0px;
+      font-family: "Covered By Your Grace", cursive;
+      font-size: 2.5rem; }
+    .jumbotron .navbar .logo {
+      display: inline-block;
+      width: 50px;
+      margin-top: 0px; }
+
+.break-white {
+  height: 2rem;
+  width: 100%;
+  background-color: white; }
