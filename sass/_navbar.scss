@@ -1,0 +1,51 @@
+@import "colors";
+@import "fonts";
+
+.jumbotron {
+	padding-bottom: 0px;
+	padding-top: 10px;
+	background-color: $purple;
+
+	.title {
+			
+			margin-left: 20px;
+			margin-bottom: 4rem;
+			font-size: 10rem;
+			color: $purple;
+	}
+
+	.navbar {
+		border-radius: 0px;
+		background-color: $blue;
+		border-color: $blue;
+		padding: 10px;
+		a	{
+			color: white;
+		}
+		li {
+			a {
+				color: white;
+			}
+			a:hover {
+				color: $darkergray;
+			}
+		}
+		.navbar-brand {
+			padding-top: 5px;
+			margin: 0px;
+			font-family: $script;
+			font-size: 2.5rem;
+		}
+		.logo {
+			display: inline-block;
+			width: 50px;
+			margin-top: 0px;
+		}
+	}
+}
+
+.break-white {
+	height: 2rem;
+	width: 100%;
+	background-color: white;
+}

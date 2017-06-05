@@ -9,7 +9,6 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
 			}
 
    	UserFactory.getUser($rootScope.user.uid).then((user) => {
-      // $rootScope.user = user;
       $scope.userUpdate.name = user.name;
       $scope.userUpdate.imageURL = user.imageURL;
 
@@ -17,7 +16,6 @@ app.controller("EditUserCtrl", function($location, $rootScope, $routeParams, $sc
   };
 
     getUserInfo();
-    console.log("button click object: ", $scope.userUpdate);
     
     $scope.updateUser = () => {
     	UserFactory.editEmail($scope.userUpdate.email);

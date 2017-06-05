@@ -27,7 +27,6 @@ app.controller("BoardListCtrl", function($rootScope, $scope, BoardFactory, PinFa
 			pinz.forEach((pin) => {
 				$scope.pins.push(pin);
 			});
-			console.log("$scope.pins", $scope.pins);
 		})
 		.catch((error) => {
 			console.log("error on getPins", error);

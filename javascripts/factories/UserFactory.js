@@ -64,7 +64,6 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
   };
 
   let editUser = (id, updatedInfo) => {
-    console.log("id", id);
     return $q((resolve, reject) => {
       $http.put(`${FIREBASE_CONFIG.databaseURL}/users/${id.id}.json`, JSON.stringify({
             name: updatedInfo.name,

@@ -1,15 +1,35 @@
-<img src="{{selectedPin.imageURL}}">
-<h1><a ng-href="{{selectedPin.url}}">{{selectedPin.title}}</a></h1>
-<div>
-    <p>{{selectedPin.description}}</p>
-</div>
-<button ng-click="pinToBoard()">Pin it!</button>
-<div ng-show="pinIt">
-	<h3>Pick a board for your pin!</h3>
-	<div ng-repeat="board in userBoards" class="radio">
-		<label  class="radio-inline">
-		  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
-		</label>
+<div class="container pinView">
+	<img class="fullImage" src="{{selectedPin.imageURL}}">
+	<h3><a ng-href="{{selectedPin.url}}">{{selectedPin.title}}</a></h3>
+	<div>
+	    <p>{{selectedPin.description}}</p>
 	</div>
-	<button ng-click="addToBoard(boardValue)">Add Pin</button>
+	<div class="boardPick panel-footer" ng-show="!pinIt">
+		<div class="container">
+		    <button class="btn btn-default pinBtn fa fa-trash-o" ng-click="deletePin()"></button>
+		    <button class="btn btn-default pinBtn fa fa-pencil-square-o" ng-click="pinToNewBoard()"></button>
+	    </div>
+	</div>
+	<div class="boardPick panel-footer" ng-show="pinIt">
+		<div class="container">
+			<h4>Pin to a Board!</h4>
+			<div ng-repeat="board in userBoards" class="radio">
+				<label  class="radio-inline">
+				  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
+				</label>
+			</div>
+			<button class="btn btn-default pinBtn" ng-click="addToBoard(boardValue)">Add Pin</button>
+		</div>
+	</div>
+	<div class="boardPick panel-footer" ng-show="newBoard">
+		<div class="container">
+			<h4>Pin to a Board!</h4>
+			<div ng-repeat="board in userBoards" class="radio">
+				<label  class="radio-inline">
+				  <input type="radio" name="whichBoard" ng-model="$parent.boardValue" value="{{board.id}}"> {{board.title}}
+				</label>
+			</div>
+			<button class="btn btn-default pinBtn" ng-click="addToBoard(boardValue)">Add Pin</button>
+		</div>
+	</div>	
 </div>

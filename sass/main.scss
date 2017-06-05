@@ -1,8 +1,8 @@
-@import "colors";
+@import "board-list";
+@import "navbar";
+@import "auth";
+@import "pinList";
+@import "pinView";
+@import "board-add";
 
-.boardListPage {
 
-	div:hover {
-	  background-color: $lightgray;
-	}
-}

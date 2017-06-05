@@ -1,0 +1,30 @@
+@import "colors";
+@import "fonts";
+
+.boardListPage {
+
+	h1 {
+		font-family: $script;
+		color: $purple;
+	}
+
+	.panel {
+		border: none;
+		background-color: $lightgray;
+		margin-left: 50px;
+	}
+
+	img {
+
+	}
+
+	.panel:hover {
+		border: 10px solid $darkergray;
+	}
+
+	.boardTitle {
+		display: block;
+		font-family: $script;
+		color: $purple;
+	}
+}

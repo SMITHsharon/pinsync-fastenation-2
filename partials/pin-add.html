@@ -15,5 +15,5 @@
         <label>Description</label>
         <input type="text" class="form-control" ng-model="newPin.description" placeholder="What's it all about?">
     </div>
-    <button class="btn btn-default" ng-click="addNewPin()">Create Pin</button>
+    <button class="btn btn-default pinBtn" ng-click="addNewPin(newPin.id)">Create Pin</button>
 </form>

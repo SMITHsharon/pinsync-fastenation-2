@@ -1,28 +1,37 @@
-<h1>Board List Page</h1>
-<div class="row boardListPage">	
-	<div class="col-xs-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 
-		<div class="panel-body">
-			<div class="thumbnail col-xs-4" ng-repeat="pin in pins | filter: board.id "><h1>test</h1>
-				 <img src="{{pin.imageURL}}">
-			</div> <!-- pins on board .div -->
+<div class="container">
+<div class="row boardListPage">
+	<h1>FasteNating Boards!</h1>
+		<div class="col-xs-3 panel panel-default" ng-repeat="board in boards" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 
-			<div class="boardTitle">
-				<h3><a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a></h3>
-
-				<button ng-show="hoverOver" class="btn btn-danger btn-xs pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
+			<div class="panel-body">
+					<div ng-repeat="pin in pins | filter: board.id | limitTo: 6 "> 
+						<div class="clearfix" ng-if="$index % 3 == 0"></div>
+							 	<div class="thumbnail col-xs-4">
+							 		<img src="{{pin.imageURL}}">
+							 	</div>
 						
-				<button ng-show="hoverOver" class="btn btn-default btn-xs pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button>
+					</div> <!-- ng-repeat -->
 
-			</div>
+				<div>
+					<div class="col-xs-12">
+						<h3 class="row boardTitle"><a ng-href="#!/board/view/{{board.id}}">{{board.title}}</a></h3>
 
-			<div class="boardDesc">{{board.description}}
-			</div>
+						<button ng-show="hoverOver" class="btn btn-danger btn-xs pull-right fa fa-trash-o" ng-click="deleteBoard(board.id)"></button>
+								
+						<button ng-show="hoverOver" class="btn btn-default btn-xs pull-right"><a class="fa fa-pencil-square-o pull-right" ng-href="#!/board/edit/{{board.id}}"></a></button>
+
+						<div class="boardDesc">{{board.description}}
+						</div>
+
+					</div>
+				</div>
 							 
 			
-		</div> <!-- .panel-body -->
-	</div> <!-- ng-repeat -->
-</div> <!-- .row -->
+			</div> <!-- .panel-body -->
+		</div> <!-- ng-repeat -->
+	</div> <!-- .row -->
+</div>
 
 
 
