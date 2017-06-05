@@ -16,7 +16,7 @@ The goal is to reverse engineer the basic functionality of Pinterest and build o
 > pull down and run `http-server`
 
 # Contributors: Team Splice Girls
-[Andrea Finch](https://github.com/aefinch)
-[Sharon Smith](https://github.com/SMITHsharon)
-[Anessa Ortner](https://github.com/anessao)
-[Heather Thacker](https://github.com/hhthacker)
+- [Andrea Finch](https://github.com/aefinch)
+- [Sharon Smith](https://github.com/SMITHsharon)
+- [Anessa Ortner](https://github.com/anessao)
+- [Heather Thacker](https://github.com/hhthacker)
