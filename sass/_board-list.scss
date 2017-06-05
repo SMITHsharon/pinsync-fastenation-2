@@ -1,0 +1,13 @@
+@import "colors";
+
+.boardListPage {
+
+	.panel {
+		border: none;
+		background-color: $lightgray;
+	}
+
+	.panel:hover {
+		border: 10px solid $darkergray;
+	}
+}
