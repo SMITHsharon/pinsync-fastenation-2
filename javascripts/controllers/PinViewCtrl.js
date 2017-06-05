@@ -3,19 +3,21 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$locatio
 	$scope.newBoard= false;
 	$scope.getBoardList = {};
 
-
-	PinFactory.viewSinglePin($routeParams.id)
-	.then((results) => {
-		$scope.selectedPin = results.data;
-		if ($scope.selectedPin.boardid==="global"){
-			$scope.pinIt = true;
-		} else {
-			$scope.pinIt = false;
-		}
-	})
-	.catch((error) => {
-		console.log("error in getSinglePin", error);
-	});
+	let pinView = () => {
+		PinFactory.viewSinglePin($routeParams.id)
+		.then((results) => {
+			$scope.selectedPin = results.data;
+			if ($scope.selectedPin.boardid==="global"){
+				$scope.pinIt = true;
+			} else {
+				$scope.pinIt = false;
+			}
+		})
+		.catch((error) => {
+			console.log("error in getSinglePin", error);
+		});
+	};
+	pinView();
 
 	$scope.pinToNewBoard = () => {
 		PinFactory.deletePin($routeParams.id).then(()=>{
@@ -35,6 +37,7 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$locatio
 
 	$scope.addToBoard = (boardId) => {
 		$scope.selectedPin.boardid = boardId;
+		$scope.selectedPin.likes = 0;
 		PinFactory.postNewPin($scope.selectedPin).then((results) => {
 			$location.url("/pins/list");
 		}).catch((error) => {
@@ -47,6 +50,17 @@ app.controller("PinViewCtrl", function($routeParams, $rootScope, $scope,$locatio
 			$location.url("/pins/list");
 		}).catch((error) => {
 			console.log("delete pin error", error);
+		});
+	};
+
+	$scope.likePin = () => {
+		$scope.selectedPin.likes = $scope.selectedPin.likes +1;
+		console.log($scope.selectedPin.likes);
+		console.log($scope.selectedPin);
+		PinFactory.editLikes($scope.selectedPin, $routeParams.id).then((results) => {
+			console.log("results in pin view ctrl", results);
+		}).catch((error) => {
+			console.log("edit likes error", error);
 		});
 	};
 });
