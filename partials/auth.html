@@ -5,13 +5,13 @@
   <input type="password" class="form-control form-spacing" placeholder="Password" ng-model="auth.password" required>
   <input type="text" class="form-control form-spacing" placeholder="Username" ng-model="auth.username" required>
   <input type="text" class="form-control form-spacing" placeholder="Profile Picture URL" ng-model="auth.imgURL">
-  <button class="btn btn-lg btn-success col-xs-6" ng-click="loginUser()">Login</button>
-  <button class="btn btn-lg btn-primary col-xs-6" ng-click="registerUser()">Register</button>
+  <button class="btn btn-lg btn-success col-xs-6 loginBtn" ng-click="loginUser()">Login</button>
+  <button class="btn btn-lg btn-primary col-xs-6 registerBtn" ng-click="registerUser()">Register</button>
 </div>
 <div class="container col-xs-4 col-xs-offset-4" ng-if="user.uid">
 	<div><h3>My Account</h3></div>
 	Email: <input type="email" class="form-control form-spacing" ng-model="userUpdate.email">
 	Name: <input type="text" class="form-control form-spacing" ng-model="userUpdate.name">
 	User Profile Image URL: <input type="text" class="form-control form-spacing" ng-model="userUpdate.imageURL">
-	<button class="btn btn-lg btn-info col-xs-6" ng-click="updateUser()">Update</button>
+	<button class="btn btn-lg btn-info col-xs-6 updateBtn" ng-click="updateUser()">Update</button>
 </div>

@@ -39,3 +39,12 @@
   height: 2rem;
   width: 100%;
   background-color: white; }
+
+.btn {
+  margin: 5px;
+  width: 47%;
+  display: inline-block; }
+
+input {
+  margin: 5px;
+  border: 1px solid #532454 !important; }
