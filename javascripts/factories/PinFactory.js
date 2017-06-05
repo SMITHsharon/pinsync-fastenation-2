@@ -51,5 +51,26 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
-	return {getPinList:getPinList, viewSinglePin:viewSinglePin, postNewPin:postNewPin, deletePin:deletePin};
+	let editLikes = (pin, pinId) => {
+		return $q((resolve, reject) => {
+			$http.put(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`,
+				JSON.stringify({
+					URL: pin.URL,
+					boardid: pin.boardid,
+					description: pin.description,
+					imageURL: pin.imageURL,
+					likes: pin.likes,
+					title: pin.title,
+					uid: pin.uid
+				}))
+			.then((results) => {
+				resolve(results);
+			}).catch((error) => {
+				reject(error);
+			});
+
+		});
+	};
+
+	return {getPinList:getPinList, viewSinglePin:viewSinglePin, postNewPin:postNewPin, deletePin:deletePin, editLikes:editLikes};
 });
