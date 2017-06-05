@@ -11,7 +11,7 @@
 	    </div>
 	</div>
 	<div class="boardPick panel-footer" ng-show="pinIt">
-		{{selectedPin.likes}}<button class="btn btn-default pinBtn fa fa-heart-o" aria-hidden="true"" ng-click="likePin()"></button>
+		<button class="btn btn-default pinBtn fa fa-heart-o pull-right" aria-hidden="true"" ng-click="likePin()">   {{selectedPin.likes}}</button>
 		<div class="container">
 			<h4>Pin to a Board!</h4>
 			<div ng-repeat="board in userBoards" class="radio">
